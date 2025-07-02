@@ -16,7 +16,7 @@
         <ul>
             <li id="mob"><a href="#"><i class="fa-solid fa-phone"></i> &nbsp;9263559268</a></li>
             <li id="mail"><a href="#"><i class="fa-solid fa-envelope"></i> &nbsp;abc101@gmail.com</a></li>
-            <li id="book"><a href="#">BOOK NOW</a></li>
+            <li id="book"><a href="book.html">BOOK NOW</a></li>
             <li id="feed"><a href="#">FEEDBACK</a></li>
         </ul>
     </div>
@@ -26,20 +26,25 @@
     <div id="menuarea">
         <ul class="menuarealist">
             <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Portfolio</a>
-                <!-- <ul class="submenu">
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Graphic Design</a></li>
-                    <li><a href="#">SEO</a></li>
-                </ul> -->
+            <li><a href="about.html">About Us</a></li>
+            <li class="navbar"><a href="portfolio.html">Portfolio</a>
+                
+                    <ul class="navbar-menu">
+                        <li><a href="#"> Weddings 💍</a></li>
+                        <li><a href="#"> Portraits 📸</a></li>
+                        <li><a href="#"> Events 🎉</a></li>
+                        <li><a href="#">  Cultural & Traditional 🪔</a></li>
+                        <li><a href="#"> Candid Moment🤍</a></li>
+                        
+                    </ul>
+                
             </li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
             <li id="cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i> &nbsp;Cart</a></li>
-            </ul>
-            <div id="search"><input type="text" placeholder="Search now ..."></div>
+        </ul>
+        <div id="search"><input type="text" placeholder="Search now ..."></div>
 
     </div>
     <br>
@@ -50,9 +55,11 @@
     </div>
     <br>
 
-    <div id="col"><h1>COLLECTIONS</h1></div>
+    <div id="col">
+        <h1>COLLECTIONS</h1>
+    </div>
     <div id="contentarea">
-        
+
         <div id="contentbox">
             <div class="box">
                 <img src="photos/dance.jpg" alt="Dance Image" width="100%" height="100%">
@@ -84,11 +91,6 @@
                 <hr>
                 <h2>Birthday Celebration</h2>
             </div>
-            <div class="box">  
-                <img src="photos/dance.jpg" alt="Dance Image" width="100%" height="100%">
-                <hr>
-                <h2>Dance</h2>
-            </div>
             <div class="box">
                 <img src="photos/dance.jpg" alt="Dance Image" width="100%" height="100%">
                 <hr>
@@ -109,7 +111,12 @@
                 <hr>
                 <h2>Dance</h2>
             </div>
-            <div class="box">   
+            <div class="box">
+                <img src="photos/dance.jpg" alt="Dance Image" width="100%" height="100%">
+                <hr>
+                <h2>Dance</h2>
+            </div>
+            <div class="box">
                 <img src="photos/dance.jpg" alt="Dance Image" width="100%" height="100%">
                 <hr>
                 <h2>Dance</h2>
@@ -119,7 +126,7 @@
                 <hr>
                 <h2>Modeling</h2>
             </div>
-            <div class="box">   
+            <div class="box">
                 <img src="photos/modeling.jpg" alt="Dance Image" width="100%" height="100%">
                 <hr>
                 <h2>Modeling</h2>
@@ -147,35 +154,60 @@
         </div>
     </div>
     <div id="topfooterarea">
-        <!-- <div class="topfoot">
-            <h2>About Us</h2>
+        <div class="topfoot">
+            <h2 class="footer-heading">About Us</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-        </div>
-        <div class="topfoot">
-            <h2>Contact Us</h2>
-            <p>Address: 123 Main Street, City, Country</p>
-            <p>Email: info@example.com</p>
-        </div>
-        <div class="topfoot">
-            <h2>Follow Us</h2>
-            <p>
-                <a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a><br>
-                <a href="#"><i class="fa-brands fa-twitter"></i> Twitter</a><br>
-                <a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a><br>
-                <a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
             </p>
+        </div>
+        <div class="topfoot">
+            <h2 class=footer-heading>OFFICIAL ADDRESS</h2>
+            <ul id="footer-address">
+                <li>
+                    <i class="fas fa-map-marker-alt fa-beat-fade"></i>Address:<a href="#">Sector- 04 P.O-Chas P.S-Chas,
+                        Bokaro Steel City 827013 </a>
+                </li>
+                <li>
+                    <i class="fa fa-envelope fa-beat-fade"></i>&nbsp;Gmail:<a href="#">abc101@gmail.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-mobile-phone fa-beat-fade"></i>Mobile:<a href="#">9263559268, 9263559268</a>
+                </li>
+                <li>
+                    <i class="fa-brands fa-whatsapp fa-beat-fade"></i>&nbsp;Whatsapp:<a href="#">9263559268</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="topfoot">
+            <h2 class=footer-heading>MENU</h2>
+            <ul id="footer-menu">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT Us</a></li>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="#">CONTACT US </a></li>
+                <li id="cart"><a href="#"><i class="fa-solid fa-cart-shopping"></i> &nbsp;CART</a></li>
+            </ul>
+        </div>
+        <div class="topfoot">
+            <h2 class=footer-heading>HOW TO REACH US</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233871.34788623048!2d85.95430829619065!3d23.667380545973735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4230341010871%3A0xf89f21d9001d5036!2sBokaro%20Steel%20City%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1751283621777!5m2!1sen!2sin"
+                width="100%" height="150px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+
 
         </div>
-         <div class="topfoot">
-            <h2>Newsletter</h2>
-            <p>Subscribe to our newsletter for the latest updates.</p>
-        
-        </div> -->
     </div>
 
     <div id="footerarea">
-       Design & Developed By :Deepak Kumar Under The Guidance Of Kunal Mahto
+        Design & Developed By :Deepak Kumar Under The Guidance Of Kunal Mahto
         <br>
         © 2025 Project. All rights reserved.
     </div>

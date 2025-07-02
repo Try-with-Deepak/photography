@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #maindiv h2 {
+            text-align: center;
+            padding-top: 25px;
+            font-weight: bolder;
+            font-size: 1.7rem;
+        }
+
+        #maindiv {
+            width: 500px;
+            height: 600px;
+            background-color: #E2CA88;
+            padding: 30px;
+            margin: 50px 350px;
+            border-radius: 30px;
+            box-shadow: 20px 20px 20px rgba(30, 9, 9, 0.915);
+        }
+
+        #contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .basic-info input {
+            border-radius: 10px;
+            height: 30px;
+            width: 200px;
+            background: #ececec;
+            border: none;
+        }
+
+        .basic-info h5 {
+            margin-bottom: 10px;
+        }
+
+        #event {
+            margin: 0 25px;
+        }
+
+        #event h5 {
+            margin-bottom: 10px;
+        }
+
+        #event select {
+            width: 100%;
+            height: 30px;
+            border-radius: 10px;
+            background: #ececec;
+            border: none;
+        }
+
+        #event-date-time {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .event-venue input {
+            border-radius: 10px;
+            height: 30px;
+            width: 200px;
+            background: #ececec;
+            border: none;
+        }
+
+        .event-venue h5 {
+            margin-bottom: 10px;
+        }
+
+        #messages {
+            margin: 0 25px;
+        }
+
+        #messages h5 {
+            margin-bottom: 10px;
+        }
+
+        #messages input {
+            width: 100%;
+            height: 50px;
+            border-radius: 10px;
+            background: #ececec;
+            border: none;
+        }
+
+        #book-now {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #book-now button {
+            background-color: rgba(240, 255, 255, 0.914);
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+        }
+
+        #book-now button:hover {
+            background-color: rgba(72, 10, 10, 0.915);
+        }
+
+        #book-now button a:hover {
+            color: white;
+        }
+
+        #book-now button a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="maindiv">
+
+        <h2>EVENT REGISTRATION</h2>
+        <div id="contact-section">
+            <div class="basic-info">
+                <h5>NAME</h5>
+                <input type="text" placeholder="Enter your Full name">
+            </div>
+            <div class="basic-info">
+                <h5>E-MAIL</h5>
+                <input type="text" placeholder="Enter e-mail">
+            </div>
+            <div class="basic-info">
+                <h5>CONTACT NO.</h5>
+                <input type="text" placeholder="Enter your Phone Number">
+            </div>
+            <div class="basic-info">
+                <h5>TELEPHONE NO.</h5>
+                <input type="text" placeholder="Enter your Phone Number">
+            </div>
+        </div>
+        <div id="event">
+            <h5>EVENT</h5>
+
+            <select>
+                <option value="">...Choose...</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Engagement">Engagement</option>
+                <option value="Anniversary">Anniversary</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Photo Shooting">Photo Shooting</option>
+            </select>
+        </div>
+        <div id="event-date-time">
+            <div class="event-venue">
+                <h5>EVENT DATE</h5>
+                <input type="date" name="date" placeholder="Date">
+            </div>
+            <div class="event-venue">
+                <h5>EVENT VENUE </h5>
+                <input type="text" placeholder="Venue">
+            </div>
+        </div>
+        <div id="messages">
+            <h5>MESSAGE</h5>
+            <input type="text" placeholder="Write your Message">
+        </div>
+        <div id="book-now">
+            <button><a href="#">BOOK NOW </a></button>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

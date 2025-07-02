@@ -40,7 +40,7 @@
 .contactarea ul #book {
     background-color: rgba(255, 200, 0, 0.914);
     border-radius: 10px;
-    
+
 }
 
 .contactarea ul #book a {
@@ -49,6 +49,9 @@
 
 .contactarea ul #book:hover {
     background-color: #000000;
+    border-bottom: 2px solid #fff;
+    padding-left: 20px;
+
 }
 
 .contactarea ul #book a:hover {
@@ -106,28 +109,52 @@
 }
 
 #menuarea .menuarealist li:hover {
-    background-color:  rgba(240, 255, 255, 0.914);
+    background-color: rgba(240, 255, 255, 0.914);
     box-shadow: 0px 5px 10px 0px rgba(72, 10, 10, 0.915);
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
+
 }
 
 #menuarea .menuarealist li a:hover {
     color: red;
-
 }
-/* #menuarea .menuarealist #search{
-padding-right: 20px;
 
+/*.navbar-menu{
+    position: absolute;
+    display: none;
+    z-index: 10;
 } */
 
-#port ul li a:hover {
-    text-decoration: none;
-    color: red;
-    background-color: yellow;
-    flex-direction: column;
-    display: flex;
-    position: absolute;
+ .navbar{
+    position: relative;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 10px 0;
+  display: none;
+  min-width: 160px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+.navbar-menu li a {
+  color: black;
+  display: block;
+  /* padding: 5px 30x; */
+}
+
+.navbar-menu li a:hover {
+  background-color: #eee;
+}
+
+.navbar:hover .navbar-menu {
+  display: block;
 }
 
 #slidearea {
@@ -152,7 +179,7 @@ padding-right: 20px;
 #contentarea {
     width: 100%;
     height: 800px;
-    background-image: url("camera1.jpg");
+    background-image: url("photos/camera1.jpg");
     /* background-image: linear-gradient(30deg, red,green); */
     background-size: cover;
     background-attachment: fixed;
@@ -189,30 +216,66 @@ padding-right: 20px;
     text-shadow: 0px 3px 5px rgba(123, 154, 154, 0.914);
 }
 
-
-
-
-
-
-
-
-
 #topfooterarea {
     width: 100%;
     height: 300px;
     background-color: rgba(240, 255, 255, 0.915);
     text-align: center;
-    color: black;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 10px 0px rgba(72, 10, 10, 0.915);
+}
+
+.topfoot {
+    width: 20%;
+    height: 200px;
+    /* border: 1px solid rgba(72, 10, 10, 0.915); */
+    display: inline-block;
+    margin: 10px;
+    padding: 25px;
 
 }
 
-/* .topfoot {
-    width: 300px;
-    height: 200px;
-    background-color: rgba(72, 10, 10, 0.915);
-    display: inline-block;
-    margin: 10px;
-} */
+.topfoot P {
+    color: #800000;
+    text-align: justify;
+    font-size: 15;
+    font-weight: bold;
+    font: normal 300 18px arial;
+}
+
+.footer-heading {
+    color: rgba(72, 10, 10, 0.915);
+    padding-bottom: 10px;
+    text-shadow: 0px 3px 5px rgba(123, 154, 154, 0.914);
+}
+
+.topfoot ul li {
+    list-style-type: none;
+    padding-bottom: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    font: normal 300 18px arial;
+}
+
+.topfoot ul li a {
+    color: #800000;
+}
+
+.topfoot ul li a:hover {
+    color: black;
+}
+
+.topfoot #footer-address {
+    text-align: justify;
+}
+
+.topfoot #footer-menu li:hover {
+    padding-left: 20px;
+    transition: all 0.8s;
+    font-size: 1.1rem;
+}
 
 #footerarea {
     width: 100%;
@@ -220,10 +283,6 @@ padding-right: 20px;
     background-color: #000000;
     text-align: center;
     color: white;
-    /* display: inline;
-    justify-content: center;
-    align-items: center; */
-
-
+    padding-top: 17px;
 
 }
