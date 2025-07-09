@@ -12,7 +12,8 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-
+    position: fixed;
+    top:0;
 }
 
 .contactarea ul li {
@@ -20,14 +21,18 @@
     display: inline-block;
     padding: 7px 10px;
     margin: 60px;
+    cursor: pointer;
+}
 
+.contactarea ul li:hover i {
+    color: black;
 }
 
 .contactarea ul li a {
     color: rgb(254, 240, 240);
 }
 
-.contactarea ul li a:hover {
+.contactarea ul li:hover a {
     color: rgb(198, 22, 22);
 }
 
@@ -40,7 +45,6 @@
 .contactarea ul #book {
     background-color: rgba(255, 200, 0, 0.914);
     border-radius: 10px;
-
 }
 
 .contactarea ul #book a {
@@ -51,7 +55,6 @@
     background-color: #000000;
     border-bottom: 2px solid #fff;
     padding-left: 20px;
-
 }
 
 .contactarea ul #book a:hover {
@@ -67,6 +70,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    top: -40;
 }
 
 #logotitlearea h1 {
@@ -90,6 +95,8 @@
     /* background-color:rgba(218, 221, 224, 0.915); */
     background-color: rgba(240, 255, 255, 0.914);
     box-shadow: 0px 5px 10px 0px rgba(72, 10, 10, 0.915);
+    /* position: fixed; */
+    /* top: 110; */
 }
 
 #menuarea ul li {
@@ -98,6 +105,7 @@
     padding: 7px 20px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 #menuarea ul li a {
@@ -113,12 +121,40 @@
     box-shadow: 0px 5px 10px 0px rgba(72, 10, 10, 0.915);
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
-
 }
 
-#menuarea .menuarealist li a:hover {
+#menuarea .menuarealist li:hover a {
     color: red;
 }
+
+#search {
+    padding-left: 10px;
+}
+
+/* .navbar-menu {
+    position: absolute;
+
+} */
+
+/* .navbar-menu ul li ul {
+    display: none;
+    position: absolute;
+    z-index: 1000;
+
+}
+
+.navbar-menu ul li:hover ul {
+    display: block;
+
+}
+
+.navbar-menu ul li:hover ul li {
+    float: none;
+    border-bottom: solid 1px black;
+    border-right: none;
+} */
+
+
 
 /*.navbar-menu{
     position: absolute;
@@ -126,42 +162,41 @@
     z-index: 10;
 } */
 
- .navbar{
+/* .navbar {
     position: relative;
 }
 
 .navbar-menu {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  background: white;
-  list-style: none;
-  padding: 10px 0;
-  display: none;
-  min-width: 160px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  z-index: 10;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    display: none;
+    min-width: 160px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 10;
 }
 
 .navbar-menu li a {
-  color: black;
-  display: block;
-  /* padding: 5px 30x; */
-}
+    color: black;
+    display: block;
+    /* padding: 5px 30x; */
 
-.navbar-menu li a:hover {
-  background-color: #eee;
+
+/*.navbar-menu li a:hover {
+    background-color: #eee;
 }
 
 .navbar:hover .navbar-menu {
-  display: block;
-}
+    display: block;
+} */
 
 #slidearea {
     width: 100%;
     height: 500px;
     background-color: rgba(133, 200, 200, 0.915);
-
 }
 
 #col {

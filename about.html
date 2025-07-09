@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About file</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         * {
             margin: 0;
@@ -70,27 +73,97 @@
             padding: 20px 100px;
             text-align: justify;
         }
-        #collection{
+
+        #collection {
             display: flex;
             justify-content: space-around;
             margin: 30px;
+            overflow: hidden;
         }
-        .photos{
-            width:200px;
-            height:400px;
-            border:5px solid  rgba(72, 10, 10, 0.915);
-            /* padding: 30px;
-            margin: 10px; */
-        }
-        .photos{
-            background-image: url("internalphotos/event_photo.png");
-            width:100%;
-            height:200px;
-            background-size: cover;
-            background-repeat: no-repeat;
-            
 
+        .photos {
+            width: 200px;
+            height: 400px;
+            border: 5px solid rgba(72, 10, 10, 0.915);
+            overflow: hidden;
         }
+
+        .photos img {
+            width: 100%;
+            height: 200px;
+            border-bottom: 5px solid rgba(72, 10, 10, 0.915);
+            transition: all 1s ease-out;
+        }
+
+        .photos img:hover {
+            transform: scale(1.2, 1.2);
+        }
+
+        .photos h6 {
+            color: rgba(72, 10, 10, 0.915);
+            text-align: center;
+            font-size: 13.7px;
+            word-spacing: 3px;
+        }
+
+        .photos p {
+            text-align: justify;
+            font-size: 17px;
+            padding: 10px;
+            color: black;
+        }
+
+        #book-now {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        #book-now button {
+            background-color: rgba(72, 10, 10, 0.915);
+            border-radius: 10px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #book-now button:hover {
+            background-color: transparent;
+        }
+
+        #book-now button:hover a {
+            color: black;
+        }
+
+        #book-now button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        #exist-arrow{
+            display:inline;
+            background-color:black;
+            border-radius: 20px;
+            padding: 5px;
+            margin-left: 90%;
+            border: 1px solid rgba(72, 10, 10, 0.915);
+            cursor: pointer;
+            padding-right: 8px;
+        }
+
+        #exist-arrow a{
+            color:white ;
+            text-decoration: none;
+        }
+
+        #exist-arrow:hover a{
+            color: black;
+        }
+
+        #exist-arrow:hover{
+            background-color: transparent;
+        }
+
     </style>
 </head>
 
@@ -129,52 +202,89 @@
         </div>
     </div>
     <div id="what-we-do">
-        <h3>
-            <h3>WHAT WE DO !!</h3>
+        <h3>WHAT WE DO !!</h3>
+        <br>
+        <div id="para2">
+            <p>At Paridhi Photography, we don’t just take pictures—we craft visual narratives that speak from the
+                heart. With a focus on elegance, emotion, and authenticity, we specialize in:
+            </p>
             <br>
-            <div id="para2">
-                <p>At Paridhi Photography, we don’t just take pictures—we craft visual narratives that speak from the
-                    heart. With a focus on elegance, emotion, and authenticity, we specialize in:
-                </p>
-                <br>
-                <p>Wedding Photography: Capturing the joy, rituals, and romance of your special day with timeless
-                    elegance.
-                </p>
-                <br>
-                <p>Pre-Wedding Shoots: Creative sessions that tell your love story in stunning locations with artistic
-                    flair
-                </p>
-                <br>
-                <p> Portraits: Individual, family, or professional portraits that bring out your personality in every
-                    frame.
-                </p>
-                <br>
-                <p> Event Coverage: From birthdays to anniversaries, we document your milestones with vibrant
-                    storytelling.
-                </p>
-                <br>
-                <p> Maternity & Newborn Shoots: Gentle, heartfelt sessions that freeze-frame life’s most tender
-                    chapters.
-                </p>
-                <br>
-                <p> Customized Albums & Photo Editing: High-quality prints and editing services to preserve and perfect
-                    your memories.
-                </p>
-                <br>
-                <p> Customized Albums & Photo Editing: High-quality prints and editing services to preserve and perfect
-                    your memories.
-                </p>
-                <div id="collection">
-                    <div class="photos">
-                        <div>
-                        <img src="internalphotos/event_photo.png">
-                        </div>
+            <p>Wedding Photography: Capturing the joy, rituals, and romance of your special day with timeless
+                elegance.
+            </p>
+            <br>
+            <p>Pre-Wedding Shoots: Creative sessions that tell your love story in stunning locations with artistic
+                flair
+            </p>
+            <br>
+            <p> Portraits: Individual, family, or professional portraits that bring out your personality in every
+                frame.
+            </p>
+            <br>
+            <p> Event Coverage: From birthdays to anniversaries, we document your milestones with vibrant
+                storytelling.
+            </p>
+            <br>
+            <p> Maternity & Newborn Shoots: Gentle, heartfelt sessions that freeze-frame life’s most tender
+                chapters.
+            </p>
+            <br>
+            <p> Customized Albums & Photo Editing: High-quality prints and editing services to preserve and perfect
+                your memories.
+            </p>
+            <br>
+            <p> Customized Albums & Photo Editing: High-quality prints and editing services to preserve and perfect
+                your memories.
+            </p>
+
+            <div id="collection">
+                <div class="photos">
+                    <img src="internalphotos/event_photo.png">
+                    <h6>EVENT PHOTOGRAPHY</h6>
+                    <p>"Photography is not just a skill—it's a celebration of vision, emotion, and stories captured in
+                        light."
+                    </p>
+                    <div id="book-now">
+                        <button><a href="#">BOOK NOW </a></button>
                     </div>
-                    <div class="photos"></div>
-                    <div class="photos"></div>
-                    <div class="photos"></div>
                 </div>
+                <div class="photos">
+                    <div class="innerdiv"><img src="internalphotos/shooting_photo.png"></div>
+                    <h6>SHOOTING PHOTOGRAPHY</h6>
+                    <p> "Photography is not just a skill—it's a celebration of vision, emotion, and stories captured in
+                        light."
+
+                    </p>
+                    <div id="book-now">
+                        <button><a href="#">BOOK NOW </a></button>
+                    </div>
+                </div>
+                <div class="photos">
+                    <img src="internalphotos/wedding.png">
+                    <h6> WEDDING PHOTOGRAPHY</h6>
+                    <p>"Wedding photography is the art of capturing love’s quiet glances and loudest joys in
+                        timeless frames."
+                    </p>
+                    <div id="book-now">
+                        <button><a href="#">BOOK NOW </a></button>
+                    </div>
+                </div>
+                <div class="photos">
+                    <img src="internalphotos/Haldi.png">
+                    <h6>HALDI PHOTOGRAPHY</h6>
+                    <p>"Haldi is not just a ritual—it's a celebration of color, laughter, and love painted in
+                        yellow."
+                    </p>
+                    <div id="book-now">
+                        <button><a href="#">BOOK NOW </a></button>
+                    </div>
+                </div>
+
             </div>
+            <div id="exist-arrow"><a href="index.html"><i class="fa-solid fa-arrow-left-long"></i>&nbsp;&nbsp; exist</a></div>
+
+        </div>
+
     </div>
 
 
