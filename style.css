@@ -12,8 +12,8 @@
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    position: fixed;
-    top:0;
+    /* position: fixed;
+    top:0; */
 }
 
 .contactarea ul li {
@@ -54,10 +54,10 @@
 .contactarea ul #book:hover {
     background-color: #000000;
     border-bottom: 2px solid #fff;
-    padding-left: 20px;
+padding-left: 20px;
 }
 
-.contactarea ul #book a:hover {
+.contactarea ul #book:hover a {
     color: white;
 }
 
@@ -70,8 +70,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
-    top: -40;
+    /* position: fixed;
+    top: -40; */
 }
 
 #logotitlearea h1 {
@@ -285,6 +285,14 @@
     text-shadow: 0px 3px 5px rgba(123, 154, 154, 0.914);
 }
 
+.footer-heading-address{
+    color: rgba(72, 10, 10, 0.915);
+    padding-bottom: 10px;
+    text-shadow: 0px 3px 5px rgba(123, 154, 154, 0.914);
+    margin-left: 20px;
+    font-family: he;
+}
+
 .topfoot ul li {
     list-style-type: none;
     padding-bottom: 5px;
@@ -304,6 +312,12 @@
 
 .topfoot #footer-address {
     text-align: justify;
+    margin-left: 40px;
+}
+
+.topfoot #footer-menu{
+    text-align: left;
+    padding-left: 83px;
 }
 
 .topfoot #footer-menu li:hover {
