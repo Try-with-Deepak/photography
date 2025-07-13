@@ -46,6 +46,20 @@
             background-color: #E1E1E1;
             border: none;
         }
+       .top input:focus{
+            outline: none;
+            box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+            border-color: red;
+        }
+
+        .top button a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .top button:hover {
+            transform: translateY(-20px);
+       }
 
         /* .top i {
             padding-left: 40px;
@@ -404,7 +418,47 @@
             right: 45%;
         }
 
+        #socialarea {
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-top:30px;
+        }
+        .left{
+            width: 100%;
+            height: 50px;
+            /* background-color: black; */
+            color: rgb(81, 7, 7);
+            text-align: center;
+            /* padding-top: 15px; */
+        }
 
+        .right{
+            width: 100%;
+            height: 50px;
+            /* background-color: black; */
+            color: rgb(103, 21, 21);
+            text-align: center;
+
+        }
+
+
+        .right ul {
+            list-style: none;
+            display: flex;
+            justify-content:flex-end;
+            align-items: center;
+            margin-right: 60px;
+            
+        }
+
+         .right ul li{
+            padding: 5px 10px 5px 10px;;
+            border:1px solid black;
+            border-radius: 50%;
+            background-color: #EDEDED;
+            margin-right: 10px;
+         }
         @media print {
             .top {
                 display: none;
@@ -556,6 +610,19 @@
                         <h5>Email</h5>
                         <p><a href="mailto:email@deepak7033511325">abc101@gmail.com.co.in</a></p>
                     </div>
+                </div>
+            </div>
+            <div id="socialarea">
+                <div class="left"><i class="fa-solid fa-arrow-left-long"></i>&nbsp;&nbsp;&nbsp;Back to Home</div>
+                <div class="right">
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-x-twitter"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li><i class="fa-brands fa-youtube"></i></li>
+                        <li><i class="fa-brands fa-pinterest"></i></li>
+                    </ul>
                 </div>
             </div>
         </div>
