@@ -16,7 +16,7 @@
 
         #maindiv {
             width: 1264.5px;
-            height: 2500px;
+            height: 2420px;
             background-color: black;
             display: flex;
             justify-content: center;
@@ -25,7 +25,7 @@
 
         .innerdiv {
             width: 1200px;
-            height: 2450px;
+            height: 2360px;
             background-color: #F2F2F2;
             border-radius: 20px;
         }
@@ -46,7 +46,8 @@
             background-color: #E1E1E1;
             border: none;
         }
-       .top input:focus{
+
+        .top input:focus {
             outline: none;
             box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
             border-color: red;
@@ -59,7 +60,7 @@
 
         .top button:hover {
             transform: translateY(-20px);
-       }
+        }
 
         /* .top i {
             padding-left: 40px;
@@ -420,45 +421,78 @@
 
         #socialarea {
             display: flex;
-            justify-content:center;
+            justify-content: center;
             align-items: center;
-            margin-top:30px;
-        }
-        .left{
-            width: 100%;
-            height: 50px;
-            /* background-color: black; */
-            color: rgb(81, 7, 7);
-            text-align: center;
-            /* padding-top: 15px; */
+            margin-top: 30px;
         }
 
-        .right{
-            width: 100%;
-            height: 50px;
-            /* background-color: black; */
-            color: rgb(103, 21, 21);
+        .left {
+            width: 150px;
+            height: 100%;
             text-align: center;
+            border-radius: 30px;
+            margin-left: 70px;
+            padding: 15px;
+            background-color: #E1E1E1;
+            cursor:pointer;
+        }
 
+        .left a {
+            text-decoration: none;
+            color: black;
+            font-weight: 300px;
+            transition: all 0.3s ease;
+
+        }
+
+        .left:hover {
+            background-color: red;
+        }
+
+        .left:hover a{
+            color: white;
+            transform: scale(1.2);
+        }
+
+        .right {
+            width: 100%;
+            height: 100%;
+            text-align: center;
         }
 
 
         .right ul {
             list-style: none;
             display: flex;
-            justify-content:flex-end;
+            justify-content: flex-end;
             align-items: center;
             margin-right: 60px;
-            
         }
 
-         .right ul li{
-            padding: 5px 10px 5px 10px;;
-            border:1px solid black;
+        .right ul li {
+            padding: 13px 13px 10px 14px;
             border-radius: 50%;
-            background-color: #EDEDED;
             margin-right: 10px;
-         }
+            background-color: #E1E1E1;
+            cursor: pointer;
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: black;
+            transition: all 0.3s ease;
+
+        }
+
+        .right ul li:hover {
+            background-color: red;
+        }
+
+        .right ul li:hover i {
+            color: white;
+            transform: scale(1.2);
+        }
+
         @media print {
             .top {
                 display: none;
@@ -613,15 +647,16 @@
                 </div>
             </div>
             <div id="socialarea">
-                <div class="left"><i class="fa-solid fa-arrow-left-long"></i>&nbsp;&nbsp;&nbsp;Back to Home</div>
+                <div class="left"><a href="index.html"><i class="fa-solid fa-arrow-left-long"></i>&nbsp;&nbsp;&nbsp;Back to
+                        Home</a></div>
                 <div class="right">
                     <ul>
-                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                        <li><i class="fa-brands fa-instagram"></i></li>
-                        <li><i class="fa-brands fa-x-twitter"></i></li>
-                        <li><i class="fa-brands fa-linkedin"></i></li>
-                        <li><i class="fa-brands fa-youtube"></i></li>
-                        <li><i class="fa-brands fa-pinterest"></i></li>
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
                     </ul>
                 </div>
             </div>
